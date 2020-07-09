@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Tablero-StatusBar'`, () => {
+  it(`should have as title 'Angular-custome Widget'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Tablero-StatusBar');
+    expect(app.title).toEqual('Angular-custome Widget');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Tablero-StatusBar!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Angular-custome Widget!');
   });
 });
